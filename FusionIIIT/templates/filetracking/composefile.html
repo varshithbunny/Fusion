@@ -34,21 +34,85 @@
                     <label>Designation</label>
                     <select class="ui fluid search selection dropdown" name="receiver">
                         <option selected hidden>Select</option>
-
-                    </select>
+                    </select>
                 </div>-->
 
+
                 <div class="field">
-                        <label>Title of File</label>
-                        <textarea rows="1" name="title" required></textarea>
+                        <label>Indenter Name</label><br>
+                        <textarea rows="1" name="Indenter" required></textarea>
                 </div>
 
 
-
-                <div class="field">
-                    <label>Description</label>
-                    <textarea rows="3" name="desc" required></textarea>
+		<div class="field">
+                        <label>Name of the Item/Equipment</label><br>
+                        <textarea rows="1" name="item" required></textarea>
                 </div>
+
+
+		<div class="field">
+                        <label>Item Specification</label><br>
+                        <textarea rows="3" name="Specs" required></textarea>
+                </div>
+
+
+		<div class="field">
+                        <label>Purpose</label><br>
+                        <textarea rows="2" name="Purpose" required></textarea>
+                </div>
+
+
+		<div class="field">
+                        <label>Quantity</label><br>
+                        <textarea rows="1" name="qty" required></textarea>
+                </div>
+
+
+		<div class="field">
+                        <label>Present Stock Position</label><br>
+                        <textarea rows="1" name="present" required></textarea>
+                </div>
+
+
+		<div class="field">
+                        <label>Estimated cost per Item</label><br>
+                        <textarea rows="1" name="cost" required></textarea>
+                </div>
+
+
+		<div class="field">
+			<label>Type of Item</label><br>
+  				<input type="radio" name="type1" value="equipment" /> <label> Equipment </label><br>
+ 				<input type="radio" name="type2" value="machinery" /> <label> Machinery </label><br>
+  				<input type="radio" name="type3" value="furniture" /> <label> Furniture </label><br>
+                </div>
+
+
+		<div class="field">
+                        <label>Nature of Item</label><br>
+				<input type="radio" name="type1" value="consumable" /> <label> Consumable </label><br>
+				<input type="radio" name="type2" value="non-consumable" /> <label> Non-consumable </label><br>
+                </div>
+
+
+		<div class="field">
+                        <label>Whether the item is available</label><br>
+ 				<input type="radio" name="type1" value="indegenous" /> <label> Indegenously </label><br>
+ 				<input type="radio" name="type2" value="import" /> <label> Imported </label><br>  
+                </div>
+
+
+		<div class="field">
+                        <label>Possible source(s) of supply</label> <br>
+                        <textarea rows="1" name="sources" required></textarea>
+                </div>
+
+
+		<div class="field">
+                        <label>Expected delivery period</label><br>
+                        <textarea rows="1" name="delivery" required></textarea>
+                </div>
+
 
                 <div class="field">
                     <label>Create as:
@@ -87,9 +151,7 @@
 
                 <br>
                 <br>
-                <div class="field">
-                            <label>Remarks:<textarea rows="2" name="remarks"></textarea></label>
-                </div>
+             
 
                 <div class="field">
                             <label>Forward To:
@@ -98,7 +160,7 @@
                                     <datalist  id="input_list">
 
                                     </datalist>
-                               
+                               
                             </label>
                 </div>
 
@@ -110,7 +172,7 @@
                             </datalist>
 
 
-                       
+                       
                     </label>
                 </div>
 
@@ -219,5 +281,3 @@
         leaveAddress.style.display = chkAddress.checked ? "block" : "none";
     }
 </script>
-
-
